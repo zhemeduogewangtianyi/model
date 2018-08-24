@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!--<link href="/common/header.html">-->
+    <link href="media/css/bootstrap-table.css" rel="stylesheet">
+    <script src="media/js/jquery-1.11.1.js" type="text/javascript"></script>
+    <script  src="media/js/bootstrap-table.js"></script>
+
+</head>
+<body>
+<img src="\static\media\images\favicon.ico">
+<h1 th:inline="text">Hello.v.2</h1>
+<p id="result" th:text="${hello}"></p>
+<p id="p">${hello}</p>
+</body>
+</html>
+
+<script>
+    $(function(){
+        $("p").text($("#result").val())
+        alert("111");
+    })
+</script>
